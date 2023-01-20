@@ -1,0 +1,27 @@
+.hotels-and-travel{
+    text-align: center;
+    background: $green;
+
+    h2{
+        color: $magenta;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+
+    a{
+        color: $magenta
+    }
+
+    h3, p{
+        color: $black;
+        font-size: 20px;
+    }
+
+    h3{
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+    .note{
+        margin-top: 40px;
+    }
+}

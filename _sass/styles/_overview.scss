@@ -1,0 +1,84 @@
+// Overview
+
+// Cloud
+.objective {
+  position: relative;
+  width: 140px;
+  height: 100px;
+  margin-top: 60px;
+  margin-left: 30px;
+  @include breakpoint(m) {
+    float: right;
+    margin-right: 60px;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  @include breakpoint(l) {
+    margin-right: 20px;
+    margin-top: 30px;
+  }
+  @include breakpoint(xl) {
+    margin-top: 40px;
+    margin-left: 0;
+  }
+}
+.objective-img {
+  width: 30px;
+  height: auto;
+  display: block;
+  position: absolute;
+  @include animation(.5s);
+  animation-delay: .7s;
+  @extend .spring;
+}
+.cloud {
+  width: 120px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  @include animation(.5s);
+  animation-delay: .3s;
+  @extend .spring;
+}
+.images {
+  top: 25px;
+  left: -25px;
+}
+.video {
+  top: -20px;
+  left: 70px;
+}
+.music {
+  top: 65px;
+  left: 140px;
+}
+.heart {
+  position: absolute;
+  width: 15px;
+  height: auto;
+  @include animation;
+  animation-delay: .8s;
+  @extend .spring;
+}
+.heart-1 {
+  top: 70px;
+  left: -20px;
+}
+.heart-2 {
+  top: 20px;
+  left: 15px;
+}
+.heart-3 {
+  top: -5px;
+  left: 40px;
+}
+.heart-4 {
+  width: 12px;
+  top: 20px;
+  left: 105px;
+}
+.heart-5 {
+  width: 20px;
+  top: 35px;
+  left: 130px;
+}

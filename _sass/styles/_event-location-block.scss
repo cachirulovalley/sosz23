@@ -1,0 +1,13 @@
+.event-location-block{
+    background: $white !important;
+    padding: 0;
+    .location-box{
+        h2,
+        .location{
+            color: $black;
+        }
+        a{
+            color: #e63a2d;
+        }
+    }
+}

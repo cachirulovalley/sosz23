@@ -1,0 +1,25 @@
+.event-sponsors-block {
+    padding-bottom: 0;
+
+    .sponsor {
+        text-indent: -9999px;
+        transition: all 0.4s ease-in-out;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    p {
+        color: $black;
+        text-align: center;
+
+        a {
+            color: $black;
+        }
+    }
+
+    .event-sponsor-list li {
+        background: transparent;
+    }
+}

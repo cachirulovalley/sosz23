@@ -1,0 +1,143 @@
+// Banner
+.banner {
+    background: transparent;
+    padding-left: 50px;
+
+    .banner-top,
+    .banner-countdown,
+    .banner-buttons {
+        max-width: 1168px;
+        margin: auto;
+    }
+    .banner-countdown {
+        margin: 50px auto;
+    }
+}
+
+.banner-date{
+    display: block;
+    width: 100%;
+    text-align: center;
+	font-size: 38px;
+}
+
+.banner-top {
+    padding-top: 50px;
+}
+
+.banner-logo {
+    text-align: center;
+}
+
+.banner-hashtag {
+    font-family: "Poppins";
+    color: $black;
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-weight: 200;
+
+    span {
+        display: block;
+    }
+}
+
+.banner-buttons {
+    text-align: center;
+
+    .button {
+        background: $white;
+        color: $black;
+        display: inline-block;
+        font-size: 26px;
+        padding: 20px 100px;
+        border: 4px solid $black;
+        border-radius: 0;
+        text-transform: lowercase;
+        font-weight: 100;
+
+        &:hover {
+            background: #f18e21;
+            color: $black;
+        }
+    }
+}
+
+.banner-countdown {
+	text-align: center;
+    padding: 0;
+    list-style: none;
+}
+
+.banner-countdown li {
+	display: inline-block;
+    margin: 5% 0 5% 0;
+}
+
+.banner-countdown li span {
+	font-size: 34px;
+    font-weight: 600;
+    color: $black;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width : 1140px){
+    .banner {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .banner-hashtag {
+        $size: 2vw;
+        font-size: $size;
+        line-height: $size * 1.2;
+
+    }
+    .banner-date{
+        $size: 2.5vw;
+    }
+    .banner-countdown li span {
+        $size: 2.5vw;
+        font-size: $size;
+        line-height: $size * 1.2;
+    }
+    .banner-buttons .button {
+        $size: 5vw;
+        font-size: $size;
+        line-height: $size * 1.2;
+        padding-left: $size * 2;
+        padding-right: $size * 2;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    .banner {
+
+        .banner-countdown {
+            margin: 10px auto;
+        }
+        .banner-buttons {
+            padding-bottom: 20px;
+        }
+    }
+    .banner-hashtag {
+        $size: 4vw;
+        font-size: $size;
+        line-height: $size * 1.2;
+
+    }
+    .banner-countdown li span {
+        font-size: 16px;
+        display: block;
+    }
+    .banner-date{
+        $size: 16px;
+    }
+    .banner-buttons .button {
+        $size: 5vw;
+        font-size: $size;
+        line-height: $size * 1.2;
+        padding-left: $size * 2;
+        padding-right: $size * 2;
+    }
+}

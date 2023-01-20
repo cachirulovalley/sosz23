@@ -1,0 +1,52 @@
+.speakers-block{
+    .header-section{
+        text-align: center;
+
+        h2{
+            color: $magenta;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+        p{
+            color: $black;
+            margin-bottom: 40px;
+            font-size: 18px;
+        }
+    }
+}
+.event-speakers{
+    max-width: 1168px;
+    margin: auto !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .speaker{
+        width: 180px;
+        padding: 20px;
+        align-items:stretch;
+        text-align: center;
+        img{
+            border: 10px solid $black;
+        }
+    }
+    .speaker-name,
+    .speaker-twitter,
+    .speaker-company{
+        font-size: 14px;
+    }
+    .speaker-name{
+        color: $black;
+        line-height: 22px;
+        font-weight: 600;
+    }
+    .speaker-twitter{
+        margin-bottom: 0;
+        a{
+            color: $magenta;
+        }
+    }
+    .speaker-company{
+        color: $black;
+        font-weight: 100;
+    }
+}

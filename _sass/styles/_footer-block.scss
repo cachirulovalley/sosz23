@@ -1,0 +1,54 @@
+.footer-top-block {
+    margin-top: -5px;
+    padding: 0;
+    background: url(../img/trama.png) transparent;
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position-x: -100px;
+    background-position-y: 0;
+
+    .section-wrapper {
+        align-items: center;
+    }
+
+    p {
+        color: $black;
+        font-size: 26px;
+        line-height: 34px;
+        font-family: 'Poppins';
+        font-weight: 600;
+
+        &.footer-text{
+            margin-bottom: 40px;
+
+            @media only screen and (max-width : 700px) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    a {
+        color: $black;
+        font-weight: 300;
+    }
+
+    .footer-link {
+        margin-bottom: 0;
+    }
+}
+
+.footer-copyright-block {
+    background: $black;
+    text-align: center;
+    padding: 20px;
+    color: $black;
+
+    p {
+        margin-bottom: 0;
+    }
+
+    a {
+        color: $white;
+        font-weight: 400;
+    }
+}

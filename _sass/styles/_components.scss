@@ -1,0 +1,366 @@
+// Shared Components
+
+// Spring
+@keyframes spring {
+  0% { transform: scale(0); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.spring { animation-name: spring; }
+
+// Overrides
+a {
+  font-weight: 700;
+  text-decoration: none;
+  transition: all .2s;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Custom Buttons
+.button {
+  border: 0;
+  background-color: $dark-blue-grey;
+  line-height: normal;
+  padding: 12px 26px;
+  text-decoration: none;
+  color: $white;
+  display: inline-block;
+  position: relative;
+  transition: all .2s;
+  font-weight: 700;
+  overflow: hidden;
+  border-radius: 5px;
+  &:hover, &:active {
+    text-decoration: none;
+    color: $white;
+    background-color: $darker-blue-grey;
+  }
+}
+.button-primary {
+  background-color: #e63a2d;
+  &:hover, &:active { background-color: $dark-red; }
+}
+.button-register {
+  height: 36px;
+  padding: 10px 26px;
+}
+
+// Button Styled as Link
+.button-link {
+  color: $base-link-color;
+  text-decoration: underline;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  &:hover { text-decoration: none; }
+  &:active { outline: 0; }
+}
+
+
+
+// Headings
+.h-white { color: $white; }
+.h-grey { color: $copy-grey; }
+.h2 { margin-bottom: .2em; }
+
+// Forms
+input.field {
+  border-radius: 5px;
+  padding: 12px 10px;
+}
+.select {
+  select {
+    background: $light-grey;
+  }
+}
+
+// Icons
+.icon {
+  position: relative;
+  display: inline-block;
+  &:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    display: block;
+    position: absolute;
+    transition: all .2s;
+    top: 50%;
+    margin-top: -8px;
+  }
+}
+.icon-left {
+  padding-left: 24px;
+  &:before { left: 0; }
+}
+.icon-right {
+  padding-right: 24px;
+  &:before { right: 0; }
+}
+
+// Chevron Icons
+.chevron-right:before { background-image: url(../img/chevron-circle-right.svg); }
+.arrow-right:before { background-image: url(../img/arrow-circle-right-teal.svg); }
+.arrow-down:before { background-image: url(../img/arrow-circle-down.svg); }
+
+// Contact Icons
+.icon-phone:before { background-image: url(../img/phone.svg); }
+.icon-email:before { background-image: url(../img/email.svg); }
+.icon-skype:before { background-image: url(../img/skype.svg); }
+
+// Tabs
+.tabs {
+  margin-top: 3em;
+  @include breakpoint(l) {
+    margin-top: 0;
+  }
+}
+.tabs-primary {
+  border: 2px solid $light-grey;
+  border-radius: 5px;
+}
+.tabs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.tab {
+  display: block;
+  text-transform: uppercase;
+  margin: 0;
+  @include breakpoint(m) {
+    display: inline-block;
+  }
+  & > a {
+    display: block;
+    transition: all .2s;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: $dark-blue-grey;
+    background-color: $light-grey;
+    &:hover {
+      background-color: $lighter-grey;
+      text-decoration: none;
+      color: $black;
+    }
+  }
+  &.active {
+    & > a {
+      background-color: $white;
+    }
+  }
+}
+.tab-content {
+  padding: 30px 15px;
+}
+.tab-pane {
+  display: none;
+  &.active {
+    display: block;
+    @include animation(.3s);
+    @extend .fade-in;
+  }
+}
+
+// Tab Secondary (Overrides)
+.tab-secondary {
+  display: inline-block;
+  & > a {
+    color: $dark-blue-grey;
+    background-color: $white;
+    border-radius: 5px 5px 0 0;
+    &:hover {
+      background-color: $lighter-grey;
+      text-decoration: none;
+      color: $black;
+    }
+  }
+  &.active {
+    & > a {
+      background-color: $light-grey;
+    }
+  }
+}
+.tab-content-secondary {
+  padding: 0;
+  border-radius: 0 5px 5px 5px;
+}
+
+
+// Panels
+.panel-heading {
+  margin-top: 10px;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+.panel-title {
+  margin: 0;
+  & > a {
+    background-color: $light-grey;
+    display: block;
+    padding: 10px;
+  }
+}
+.panel-body {
+  padding: 10px;
+  background-color: $light-grey;
+  border-radius: 0 0 5px 5px;
+}
+
+.collapse {
+  display: none;
+  &.in {
+    display: block;
+  }
+}
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition-timing-function: ease;
+  transition-duration: .35s;
+  transition-property: height, visibility;
+}
+
+
+// Custom Breaks
+.hr {
+  width: 100%;
+  height: 7px;
+  border: 0;
+  background-color: $lighter-grey;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+// Lists
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li {
+    padding-left: 25px;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    &:before {
+      content: "";
+      width: 16px;
+      height: 16px;
+      background-image: url(../img/check-circle.svg);
+      background-repeat: no-repeat;
+      display: block;
+      position: absolute;
+      top: 3px;
+      left: 0;
+    }
+  }
+}
+
+// Video
+.video-responsive {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// Carousel
+.carousel { position: relative; }
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  & > .item {
+    position: relative;
+    display: none;
+    & > .image {
+      display: block;
+    }
+  }
+}
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .carousel-inner > .item {
+    transition: transform .6s ease-in-out;
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  .carousel-inner > .item.next,
+  .carousel-inner > .item.active.slide-right {
+    left: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  .carousel-inner > .item.prev,
+  .carousel-inner > .item.active.slide-left {
+    left: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  .carousel-inner > .item.next.slide-left,
+  .carousel-inner > .item.prev.slide-right,
+  .carousel-inner > .item.active {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  display: block;
+}
+.carousel-inner > .active { left: 0; }
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.carousel-inner > .next { left: 100%; }
+.carousel-inner > .prev { left: -100%; }
+.carousel-inner > .next.slide-left,
+.carousel-inner > .prev.slide-right {
+  left: 0;
+}
+.carousel-inner > .active.slide-left { left: -100%; }
+.carousel-inner > .active.slide-right { left: 100%; }
+
+.carousel-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  z-index: 9000;
+  & > li {
+    width: 14px;
+    height: 14px;
+    display: block;
+    background-color: transparent;
+    display: inline-block;
+    border-radius: 100%;
+    border: 2px solid $copy-grey;
+    margin: 0 .2em;
+    cursor: pointer;
+    &.active {
+      background-color: $copy-grey;
+    }
+  }
+}
+
+// Content Blocks
+.grey-row { background-color: $light-grey; }

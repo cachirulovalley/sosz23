@@ -1,0 +1,74 @@
+.promotional-block {
+    margin-top: -5px;
+    padding: 0;
+    background: url(../img/trama.png) transparent;
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position-x: -100px;
+    background-position-y: 0;
+
+    .title-section {
+        padding-top: 50px;
+        margin-bottom: -50px;
+        padding-left: 20px;
+    }
+
+    .section-wrapper {
+        margin-top: -100px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    img {
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+
+    .col > * {
+        color: $black;
+    }
+
+    .col {
+        align-items: stretch;
+        font-family: "Courier Prime";
+        font-weight: 100;
+        text-align: left;
+
+        h3 {
+            font-size: 32px;
+            margin-bottom: 40px;
+            font-family: 'Poppins';
+            font-weight: 600;
+        }
+
+        h4 {
+            font-size: 26px;
+            line-height: 30px;
+            margin-bottom: 20px;
+            font-family: 'Poppins';
+            font-weight: 600;
+        }
+
+        .button {
+            background: $white;
+            color: $black;
+            display: inline-block;
+            font-size: 28px;
+            text-align: center;
+            border: 4px solid $black;
+            border-radius: 0;
+            font-family: 'button';
+            font-weight: 100;
+            width: 100%;
+
+            &:hover {
+                background: #f18e21;
+                color: $black;
+            }
+        }
+
+        &:first-child {
+            margin-bottom: 40px;
+        }
+    }
+}

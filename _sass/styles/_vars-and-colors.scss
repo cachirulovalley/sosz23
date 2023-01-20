@@ -1,0 +1,101 @@
+$magenta: #ed68a2;
+$green: #00FF00;
+$black: #000;
+$white: #FFF;
+$yellow: #ffed00;
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Courier+Prime');
+@import url('https://fonts.googleapis.com/css?family=Prata');
+
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+    font-family: "Courier Prime";
+    font-size: 16px;
+    line-height: 22px;
+
+    background-image: url(/img/bgbanner.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: $white;
+    color: $black;
+    padding: 0;
+    background-size: 100% auto;
+
+    @media only screen and (max-width : 1000px) {
+        background-size: 1000px;
+    }
+}
+
+h1, h2, h3 {
+    font-family: "Poppins" !important;
+}
+
+img {
+    max-width: 100%;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.section {
+    padding: 80px;
+
+    @media only screen and (max-width : 940px) {
+        padding: 40px;
+    }
+
+    @media only screen and (max-width : 700px) {
+        padding: 20px;
+    }
+}
+
+.section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1168px;
+    margin: auto;
+
+    .col-half {
+        flex-basis: calc(50% - 20px);
+    }
+
+    @media only screen and (max-width : 940px) {
+        display: block;
+    }
+}
+
+.main-section {
+    max-width: 1168px;
+    margin: auto;
+}
+
+.icon-title {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.title-section {
+    color: $black;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 50px;
+    font-family: 'Prata' !important;
+    padding-bottom: 40px;
+}
+
+@media only screen and (max-width : 940px) {
+    .icon-title {
+        height: 20px;
+    }
+
+    .title-section {
+        font-size: 30px;
+        line-height: 30px;
+        padding-bottom: 15px;
+    }
+}

@@ -1,0 +1,33 @@
+.introduction-block {
+    background: transparent;
+
+    h2 {
+        color: $black;
+        margin-bottom: 1em;
+        font-size: 32px;
+    }
+    
+    h3 {
+        font-size: 22px;
+        margin-bottom: 1em;
+    }
+
+    h3, p {
+        color: black;
+    }
+
+    @media only screen and (max-width : 940px) {
+        .section-wrapper {
+            flex-basis: 100%;
+            display: block;
+        }
+        .col {
+            margin-bottom: 40px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,57 @@
+// Map and Location
+.event-location-block {
+  background: $black;
+  padding-bottom: 0;
+}
+.map {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.google-map {
+  height: 400px;
+  width: 100%;
+}
+.location-box {
+  background-color: $white;
+  position: absolute;
+  width: 300px;
+  min-height: 140px;
+  top: 50%;
+  left: 50%;
+  margin-top: -70px;
+  margin-left: -150px;
+  z-index: 9990;
+  @include breakpoint(m) {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+.location { padding-bottom: 1em; }
+
+.location-box-container {
+  @include breakpoint(m) {
+    width: $container-m;
+    position: absolute;
+    left: 50%;
+    bottom: 2em;
+    margin-left: -$container-m / 2;
+  }
+  @include breakpoint(l) {
+    width: $container-l;
+    position: absolute;
+    left: 50%;
+    bottom: 2em;
+    margin-left: -$container-l / 2;
+  }
+  @include breakpoint(xl) {
+    width: $container-xl;
+    position: absolute;
+    left: 50%;
+    bottom: 2em;
+    margin-left: -$container-xl / 2;
+  }
+}
