@@ -22,4 +22,22 @@
     .event-sponsor-list li {
         background: transparent;
     }
+
+    .want-sponsor-title {
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 20px;
+        font-family: 'Poppins';
+        font-weight: 600;
+        color: $black;
+    }
+
+    .want-sponsor-text {
+        text-align: left;
+    }
+
+    .want-sponsor-link {
+        color: $black;
+        text-decoration: underline;
+    }
 }

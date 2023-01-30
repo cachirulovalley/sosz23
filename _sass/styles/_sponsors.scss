@@ -11,19 +11,19 @@
 }
 
 .sponsor {
-  height: 40px;
+  height: 90px;
   width: 160px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   display: block;
   margin-bottom: 20px;
   background-size: 100%;
-  a{
+  a {
       cursor: pointer;
   }
 }
 .sponsor-10labs {
-  background-image: url(../img/logos/10labs.png);
+  background-image: url(../img/logos/10labs2.png);
 }
 .sponsor-shuttlecloud {
   background-image: url(../img/logos/shuttlecloud.png);
@@ -36,7 +36,7 @@
 }
 .sponsor-nidorobotics {
   width: 70px;
-  height: 70px;
+  //height: 70px;
   background-image: url(../img/logos/nidorobotics.png);
 }
 .sponsor-semmantica {
@@ -44,7 +44,7 @@
 }
 .sponsor-soluble {
   width: 140px;
-  height: 40px;
+  //height: 40px;
   background-image: url(../img/logos/solublestudio.png);
 }
 .sponsor-540deg {
@@ -63,7 +63,7 @@
 }
 .sponsor-ambar {
   width: 140px;
-  height: 75px;
+  //height: 75px;
   background-image: url(../img/logos/ambar.png);
 }
 .sponsor-holaluz {
@@ -71,12 +71,12 @@
   background-image: url(../img/logos/holaluz.png);
 }
 .sponsor-wayra {
-  height: 80px;
+  //height: 80px;
   background-image: url(../img/logos/wayra.png);
 }
 .sponsor-google {
   background-image: url(../img/logos/googlestartups.png);
-  height: 100px;
+  //height: 100px;
   width: 90px;
 }
 .sponsor-autentia {
@@ -112,24 +112,32 @@
   background-image: url(../img/logos/runroom.png);
 }
 .sponsor-manfred {
-  height: 40px;
+  //height: 40px;
   background-image: url(../img/logos/manfred.png);
 }
 .sponsor-kambanize {
-  height: 28px;
+  //height: 28px;
   background-image: url(../img/logos/kambanize.png);
 }
 .sponsor-enreach {
-  height: 43px;
+  //height: 43px;
   background-image: url(../img/logos/enreach.png);
 }
 .sponsor-ethichub {
-  height: 54px;
+  //height: 54px;
   background-image: url(../img/logos/ethichub.png);
 }
 .sponsor-vueling {
-  height: 54px;
+  //height: 54px;
   background-image: url(../img/logos/vueling.png);
+}
+.sponsor-numericco {
+  //height: 54px;
+  background-image: url(../img/logos/numericco.svg);
+}
+.sponsor-panel {
+  //height: 54px;
+  background-image: url(../img/logos/panel.png);
 }
 
 @media (max-width: 480px) {
