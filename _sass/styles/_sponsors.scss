@@ -81,7 +81,7 @@
 }
 .sponsor-autentia {
   width: 145px;
-  background-image: url(../img/logos/autentia.png);
+  background-image: url(../img/logos/autentia.svg);
 }
 .sponsor-carto {
   width: 102px;
@@ -138,6 +138,15 @@
 .sponsor-panel {
   //height: 54px;
   background-image: url(../img/logos/panel.png);
+}
+.sponsor-plainconcepts {
+  background-image: url(../img/logos/plainconcepts.png);
+}
+.sponsor-tinybird {
+  background-image: url(../img/logos/tinybird.svg);
+}
+.sponsor-sparta {
+  background-image: url(../img/logos/sparta.png);
 }
 
 @media (max-width: 480px) {
